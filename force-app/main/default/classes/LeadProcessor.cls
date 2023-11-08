@@ -1,4 +1,4 @@
-public /*with sharing*/ class LeadProcessor implements Database.Batchable<sObject>, Database.Stateful {
+public class LeadProcessor implements Database.Batchable<sObject>, Database.Stateful {
     public Integer recordsProcessed = 0;
     public Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator([SELECT LeadSource From Lead]);

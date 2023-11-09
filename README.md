@@ -4,11 +4,13 @@ Navigate to force-app/main/default to view classes, triggers, and test suites th
 
 - View the comments at the top of a file get an overview of what it does.
 
-Skills leveraged include:
+Skills leveraged include but not limited too:
 
 - Apex programming
 - Apex triggers
 - Apex testing
+  - TestDataFactory
+  - @TestSetup
 - Async Apex
   - Batch apex & future methods
 - SOQL

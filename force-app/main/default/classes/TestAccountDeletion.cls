@@ -1,3 +1,6 @@
+/**
+ * * This class tests the AccountDeletion trigger. It provides various test cases to ensure that accounts are allowed to be deleted only when they have no related opportunities.
+ */
 @isTest
 private class TestAccountDeletion {
     @isTest static void TestDeleteAccountWithOneOpportunity() {

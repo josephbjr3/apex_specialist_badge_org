@@ -1,5 +1,9 @@
+/**
+ * *This class updates all lead record's lead source to 'Dreamforce'. This is an example of Batch Apex at work.
+ */
 public class LeadProcessor implements Database.Batchable<sObject>, Database.Stateful {
   public Integer recordsProcessed = 0;
+
   public Database.QueryLocator start(Database.BatchableContext bc) {
     return Database.getQueryLocator([SELECT LeadSource FROM Lead]);
   }

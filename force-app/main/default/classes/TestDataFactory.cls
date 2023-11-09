@@ -1,6 +1,13 @@
+/**
+ * * This class is the TestDataFactory. It's a special class for createing sample data for Apex testing.
+ */
 @isTest
 public class TestDataFactory {
-    
+    /**
+     * * This method creates Accounts with related opportunities
+     * @param numAccts The parameter where you input the number of Accounts you want to create
+     * @param numOppsPerAcct The parameter where you input the number of Opportunities per Account
+     */
     public static List<Account> createAccountsWithOpps(Integer numAccts, Integer numOppsPerAcct) {
         List<Account> accts = new List<Account>();
         for(Integer i=0;i<numAccts;i++) {
@@ -23,7 +30,10 @@ public class TestDataFactory {
         insert opps;
         return accts;
     }
-    
+    /**
+     * * This method creates Accounts with related contacts
+     * @param numAccts The parameter where you input the number of Accounts you want to create
+     */
     public static List<Account> createAccountsWithContacts(Integer numAccts){
         List<Account> accts = new List<Account>();
         for(integer i=0; i<numAccts; i++) {

@@ -1,3 +1,6 @@
+/**
+ * * This class verfies that the second inputted date succeeds the first inputted date and is within 30 days. If this condition is met, the second inputted date is returned. Else, the last day of the month of the first inputted date is returned.
+ */
 public class VerifyDate {
 	
 	//method to handle potential checks against two dates

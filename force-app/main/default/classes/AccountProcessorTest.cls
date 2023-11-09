@@ -1,3 +1,6 @@
+/**
+ * *This class tests the AccountProcessor class. It leverages the TestDataFactory class to create test data (in this case, Accounts w/ contacts), then asserts that the Number_Of_Contacts__c field has been update for each Account record created by the TestDataFactory class.
+ */
 @isTest
 public class AccountProcessorTest {
     

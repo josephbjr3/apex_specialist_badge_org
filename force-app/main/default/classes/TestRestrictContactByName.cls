@@ -1,3 +1,7 @@
+/**
+ * * This class tests the RestrictContactByName trigger. The RestrictContactByName trigger prevents inserts or updates of contacts record with a last name of 'INVALIDNAME'.
+ * The method in this class asserts that a contact with a last name of 'INVALIDNAME' is not allowed to be inserted.
+ */
 @isTest
 public class TestRestrictContactByName {
     @isTest static void testRestrictContactByName() {

@@ -1,5 +1,5 @@
 /**
- * *This class tests the LeadProcessor class. It creates 200 test leads that don't have an inputted lead souce and asserts that the lead source is updated to 'Dreamforce' for each test lead. 
+ * *This class tests the LeadProcessor class. It creates 200 test leads that don't have an inputted lead souce and asserts that the lead source is updated to 'Dreamforce' for each test lead.
  * The test setup method is used here to create the test data
  * This test is an example of Batch Apex at work.
  */
@@ -8,7 +8,7 @@ public class LeadProcessorTest {
   @TestSetup
   static void setup() {
     List<Lead> leads = new List<Lead>();
-    //insert 10 leads
+    //insert 10 test leads
     for (Integer i = 0; i < 200; i++) {
       leads.add(
         new Lead(
